@@ -1,0 +1,23 @@
+import java.awt.Graphics2D;
+public class drawLines
+{
+   public static final int  GRID_SIZE = 30;
+   public void DrawPanel(Graphics2D gridDrawer)
+   {
+      int xLine = 0; //initial line position. For graph x = y
+      int yLine = 0;
+      /* Draw Y = 0 lines, aka vertical */
+      for(int i = 1; i < GRID_SIZE; i++)
+      {
+         gridDrawer.drawLine(xLine, yLine, xLine+30, yLine+30);
+         xLine += 10; //10 pixel grid.
+      }
+      xLine = 0;
+      /* Draw x = 0 lines, aka horizontal */
+      for(int i = 1; i < GRID_SIZE; i++)
+      {
+         gridDrawer.drawLine(xLine, yLine, xLine+30, yLine+30);
+         yLine += 10; //10 pixel grid.
+      }
+   }
+}

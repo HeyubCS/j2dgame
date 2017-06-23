@@ -1,0 +1,16 @@
+import java.io.*;
+import java.awt.*;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import javax.swing.*;
+import java.util.Scanner;
+
+public class draw15
+{
+   public static void main(String[] args)
+   {
+     drawFrame frame = new drawFrame();
+     frame.drawFrame();
+   }
+
+}
